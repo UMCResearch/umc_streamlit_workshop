@@ -1,0 +1,4 @@
+name: mie2022_workshop_streamlit
+dependencies:
+  - python=3.9
+  - pip

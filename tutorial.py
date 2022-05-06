@@ -1,6 +1,8 @@
 from pathlib import Path
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 def load_step(file_path: str):
     code_body = Path(file_path).read_text()
 
@@ -31,10 +33,11 @@ navigation = {
     "Step 2": lambda: load_step("tutorial_001.py"),
     "Step 2.1": lambda: load_step("tutorial_002.py"),
     "Step 3": lambda: load_step("tutorial_003.py"),
-    "Step 4": lambda: load_step("tutorial_005.py"),
-    "Step 4.1": lambda: load_step("tutorial_0051.py"),
-    "Step 5": lambda: load_step("tutorial_006.py"),
-    "Bonus: Step 6": lambda: load_step("tutorial_007.py"),
+    "Step 4": lambda: load_step("tutorial_004.py"),
+    "Step 4.1": lambda: load_step("tutorial_0041.py"),
+    "Step 5": lambda: load_step("tutorial_005.py"),
+    "Bonus: Step 6": lambda: load_step("tutorial_006.py"),
+    "Bonus: Step 7": lambda: load_step("tutorial_007.py"),
     "🎉 Celebrate! 🎉": celebrate
 }
 

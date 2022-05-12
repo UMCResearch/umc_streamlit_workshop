@@ -19,6 +19,8 @@ if query:
         sort_fields = st.multiselect("Sort by", ("VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"))
         sort_ascending = st.checkbox('Ascending', True)
 
+    st.write(f"{len(results)} matches out of {len(df)} records")
+
     start_index = current_page * n_results_per_page
     end_index = start_index + n_results_per_page
     results_page = results.iloc[start_index : end_index]

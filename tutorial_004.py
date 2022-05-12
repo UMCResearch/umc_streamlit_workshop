@@ -12,4 +12,6 @@ if query:
 
     results_page = results.iloc[0 : num_results]
 
+    st.write(f"{len(results)} matches out of {len(df)} records")
+
     st.table(results_page)

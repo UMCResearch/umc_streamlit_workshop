@@ -7,4 +7,7 @@ query = st.text_input('Query', placeholder='Enter a search term')
 
 if query:
     results = df[df['SYMPTOM_TEXT'].str.contains(query)]
+
+    st.write(f"{len(results)} matches out of {len(df)} records")
+
     st.table(results)

@@ -12,6 +12,9 @@ def load_step(file_path: str):
     with st.expander("Code"):
         st.code(code_body)
 
+    ## WARNING: DO NOT DO THIS IN PRODUCTION ENVIRONMENTS!
+    ## ONLY RUN THIS WITH TRUSTED SOURCES! FOR DEMONSTRATION PURPOSES ONLY!
+    ## YOU HAVE BEEN WARNED!
     exec(code_body)
 
 def celebrate():

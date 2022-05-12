@@ -16,18 +16,19 @@ if query:
         n_pages = math.ceil(n_results / n_results_per_page)
         current_page = st.selectbox("Page", range(n_pages))
 
+    st.write(f"{len(results)} matches out of {len(df)} records")
+
     start_index = current_page * n_results_per_page
     end_index = start_index + n_results_per_page
     results_page = results.iloc[start_index : end_index]
 
     col1, col2 = st.columns(2)
     
-    chart1_base = alt.Chart(results).encode(
+    chart1 = alt.Chart(results).mark_arc().encode(
         theta=alt.Theta('count(SEX)', stack=True),
-        color='SEX'
+        color='SEX',
+        tooltip=["count(SEX)"]
     )
-
-    chart1 = chart1_base.mark_arc() + chart1_base.mark_text(radius=80, fill="white").encode(text="count(SEX)")
     
     col1.altair_chart(chart1, use_container_width=True)
 
@@ -38,7 +39,7 @@ if query:
     ).interactive()
     col2.altair_chart(chart2, use_container_width=True)
 
-    chart3 = alt.Chart(results).mark_bar().encode(x='RECVDATE', y='count()', tooltip=['count()']).interactive()
+    chart3 = alt.Chart(results).mark_bar().encode(x='RECVDATE', y='count()', tooltip=['count()'])
     st.altair_chart(chart3, use_container_width=True)
 
     st.table(results_page)

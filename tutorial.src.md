@@ -16,7 +16,9 @@ pip install -r requirements.txt
 ```
 
 > ##### :rocket: Fast forward
-> Alternatively, if you don't have a working python or conda installation, you can fork a repl at: https://replit.com/@ShachiBista/Streamlit (requires registration, no affiliation).
+> Alternatively, if you don't have a working python or conda installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration, no affiliation).
+> 
+> Once the page opens, click on "Fork repl" to create your own local copy.
 
 You will also need a dataset, for this tutorial we will use the VAERS 2020 dataset available for download here: https://vaers.hhs.gov/data/datasets.html
 

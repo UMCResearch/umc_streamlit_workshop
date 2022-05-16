@@ -26,6 +26,10 @@ You will also need a dataset, for this tutorial we will use the VAERS 2020 datas
 
 Download the "CSV File (VAERS DATA)" column for the year 2020 and place it in the working directory.
 
+> #### :lying_face: Fake data
+> 
+> If you do not wish to download the VAERS data (or are unable to due to network issues), you can also use the `2020VAERSLike.csv` file included in this repo. This some fake data generated from sci.med newsgroup with similar distribution to the VAERS 2020 dataset.
+
 # Step 1 - basic UI
 
 Since we are aiming to build a search interface, the most basic interface we need is a search field. This is quite easily done with streamlit using the `text_input` method.

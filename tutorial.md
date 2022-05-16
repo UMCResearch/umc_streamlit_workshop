@@ -2,21 +2,23 @@
 
 Let's start by creating the python environment where all our dependencies will be installed.
 
-This assumes you have conda installed. However this is an optional step.
+We recommend that you install the dependencies in a conda environment, which can create and activate using the following commands:
 
-```bash
+```
 conda env create -f environment.yml
 conda activate mie2022_workshop_streamlit
 ```
 
 Now let's install all the requirements which installs streamlit and other dependencies of this project.
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 > ##### :rocket: Fast forward
-> Alternatively, if you don't have a working python or conda installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration, no affiliation).
+> Alternatively, if you don't have a working python or conda installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration).
+>
+> Repl.it is a browser-based environment for running python scripts without installing it locally. UMC has no affiliation to repl.it.
 > 
 > Once the page opens, click on "Fork repl" to create your own local copy.
 
@@ -38,7 +40,7 @@ query = st.text_input('Query', placeholder='Enter a search term')
 
 Unlike most python scripts, streamlit has its own runtime which launches a local web server. In order to run this script, we need to invoke the `streamlit run` command:
 
-```bash
+```
 $ streamlit run tutorial_000.py
 
   You can now view your Streamlit app in your browser.

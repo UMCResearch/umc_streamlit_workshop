@@ -4,7 +4,7 @@ This repository is created for the MIE2022 workshop on [streamlit](https://strea
 
 This workshop requires the `conda` environment, which can be installed from [here](https://docs.conda.io/en/latest/miniconda.html).
 
-Once installed, follow the instructions in `tutorial.md` for a step-by-step walkthrough. 
+Once installed, follow the instructions in [tutorial.md](tutorial.md) for a step-by-step walkthrough. 
 
 ## Preparation
 

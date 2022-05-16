@@ -25,7 +25,7 @@ if query:
     col1, col2 = st.columns(2)
     
     chart1 = alt.Chart(results).mark_arc().encode(
-        theta=alt.Theta('count(SEX)', stack=True),
+        theta='count(SEX)',
         color='SEX',
         tooltip=["count(SEX)"]
     )

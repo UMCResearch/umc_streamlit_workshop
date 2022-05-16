@@ -22,24 +22,25 @@ if query:
     end_index = start_index + n_results_per_page
     results_page = results.iloc[start_index : end_index]
 
-    col1, col2 = st.columns(2)
+    col_a, col_b = st.columns(2)
     
-    chart1 = alt.Chart(results).mark_arc().encode(
+    sex_ratio_chart = alt.Chart(results).mark_arc().encode(
         theta='count(SEX)',
         color='SEX',
         tooltip=["count(SEX)"]
     )
     
-    col1.altair_chart(chart1, use_container_width=True)
+    col_a.altair_chart(sex_ratio_chart, use_container_width=True)
 
-    chart2 = alt.Chart(results).mark_bar().encode(
+    tto_chart = alt.Chart(results).mark_bar().encode(
         x=alt.X('NUMDAYS', scale=alt.Scale(domain=[0, 100])),
         y='count()',
         tooltip=['count()']
     ).interactive()
-    col2.altair_chart(chart2, use_container_width=True)
 
-    chart3 = alt.Chart(results).mark_bar().encode(x='RECVDATE', y='count()', tooltip=['count()'])
-    st.altair_chart(chart3, use_container_width=True)
+    col_b.altair_chart(tto_chart, use_container_width=True)
+
+    recv_date_chart = alt.Chart(results).mark_bar().encode(x='RECVDATE', y='count()', tooltip=['count()'])
+    st.altair_chart(recv_date_chart, use_container_width=True)
 
     st.table(results_page)

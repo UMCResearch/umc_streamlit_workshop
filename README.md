@@ -10,7 +10,7 @@ Once installed, follow the instructions in [tutorial.md](tutorial.md) for a step
 
 Start by creating the python environment where all our dependencies will be installed.
 
-We recommend that you install the dependencies in a conda environment, which can create and activate using the following commands:
+We recommend that you install the dependencies in a conda environment, which you can create and activate using the following commands:
 
 ```
 conda env create -f environment.yml
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 > ##### :rocket: Fast forward
 > Alternatively, if you don't have a working python or conda installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration).
 >
-> Repl.it is a browser-based environment for running python scripts without installing it locally. UMC has no affiliation to repl.it.
+> Repl.it is a browser-based environment for running python scripts without installing python locally. UMC has no affiliation to repl.it.
 > 
 > Once the page opens, click on "Fork repl" to create your own local copy.
 

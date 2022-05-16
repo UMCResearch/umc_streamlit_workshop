@@ -167,7 +167,7 @@ if query:
 
 # Step 5 - sidebar
 
-So far, we've worked on functionality. However streamlit can also perform some layout operations to a minimum degree. In our search engine for example, the presence of the filters next to the search makes the UI look unncessarily complex. After all, we should focus on the results. 
+So far, we've worked on functionality. However streamlit can also perform some layout operations to a minimal degree. In our search engine for example, the presence of the filters next to the search makes the UI look unnecessarily complex. After all, we should focus on the results. 
 
 With a simple application of `st.sidebar` we can move the paginations to the sidebar.
 

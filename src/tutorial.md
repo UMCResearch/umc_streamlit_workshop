@@ -132,7 +132,7 @@ With a simple application of `st.sidebar` we can move the paginations to the sid
 
 Our search works, however we can only see the first page of results. Let's add some basic pagination by calculating the number of pages as:
 
-$$ N_\text{pages} = \lceil \frac{N_\text{results}}{N_\text{results per page}} \rceil $$
+$$ N_\text{pages} = \left \lceil \frac{N_\text{results}}{N_\text{results per page}} \right \rceil $$
 
 ```python
 # Bonus: Step 6

@@ -208,7 +208,7 @@ if query:
 
 Our search works, however we can only see the first page of results. Let's add some basic pagination by calculating the number of pages as:
 
-$ N_\text{pages} = \lceil \frac{N_\text{results}}{N_\text{results per page}} \rceil $
+$$ N_\text{pages} = \lceil \frac{N_\text{results}}{N_\text{results per page}} \rceil $$
 
 ```python
 # Bonus: Step 6

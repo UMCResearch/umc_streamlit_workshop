@@ -1,0 +1,7 @@
+[runner]
+
+fastReruns = true
+
+[browser]
+
+gatherUsageStats = false

@@ -10,6 +10,16 @@ Once installed, follow the instructions in [tutorial.md](tutorial.md) for a step
 
 Start by creating the python environment where all our dependencies will be installed.
 
+> ##### :whale2: Docker
+> 
+> We provide a docker setup for those who do not have conda installed but may have docker installed. 
+> 
+> To run the workshop in a docker environment simply run the following command:
+> ```
+> docker compose up
+> ```
+> This will build the image and start a webserver at http://localhost:8501. If you run using docker, you can skip the rest of this section.
+
 We recommend that you install the dependencies in a conda environment, which you can create and activate using the following commands:
 
 ```

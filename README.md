@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ```
 
 > ##### :rocket: Fast forward
-> Alternatively, if you don't have a working python or conda installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration).
+> Alternatively, if you don't have a working python, conda or docker installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration).
 >
 > Repl.it is a browser-based environment for running python scripts without installing python locally. UMC has no affiliation to repl.it.
 > 

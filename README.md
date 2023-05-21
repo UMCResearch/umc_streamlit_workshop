@@ -10,16 +10,6 @@ Once installed, follow the instructions in [tutorial.md](tutorial.md) for a step
 
 Start by creating the python environment where all our dependencies will be installed.
 
-> ##### :whale2: Docker
-> 
-> We provide a docker setup for those who do not have conda installed but may have docker installed. 
-> 
-> To run the workshop in a docker environment simply run the following command:
-> ```
-> docker compose up
-> ```
-> This will build the image and start a webserver at http://localhost:8501. If you run using docker, you can skip the rest of this section.
-
 We recommend that you install the dependencies in a conda environment, which you can create and activate using the following commands:
 
 ```
@@ -32,13 +22,6 @@ Now let's install all the requirements which installs streamlit and other depend
 ```
 pip install -r requirements.txt
 ```
-
-> ##### :rocket: Fast forward
-> Alternatively, if you don't have a working python, conda or docker installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration).
->
-> Repl.it is a browser-based environment for running python scripts without installing python locally. UMC has no affiliation to repl.it.
-> 
-> Once the page opens, click on "Fork repl" to create your own local copy.
 
 You will also need a dataset, for this tutorial we will use the VAERS 2020 dataset available for download here: https://vaers.hhs.gov/data/datasets.html
 

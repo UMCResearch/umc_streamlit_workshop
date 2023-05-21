@@ -89,7 +89,7 @@ For the purposes of this demo, we perform a simple case-insensitive exact-match 
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -122,7 +122,7 @@ Let us add a slider to select the number of results to display. This can be done
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -146,7 +146,7 @@ Our assessors like this, however they quickly notice that sometimes they need to
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -176,7 +176,7 @@ With a simple application of `st.sidebar` we can move the paginations to the sid
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -210,7 +210,7 @@ import math
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -250,7 +250,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 

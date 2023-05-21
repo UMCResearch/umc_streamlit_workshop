@@ -6,7 +6,7 @@ We recommend that you install the dependencies in a conda environment, which can
 
 ```
 conda env create -f environment.yml
-conda activate mie2022_workshop_streamlit
+conda activate umc_workshop_streamlit
 ```
 
 Now let's install all the requirements which installs streamlit and other dependencies of this project.

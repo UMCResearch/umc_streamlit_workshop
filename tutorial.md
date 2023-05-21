@@ -2,21 +2,11 @@
 
 Let's start by creating the python environment where all our dependencies will be installed.
 
-> ##### :whale2: Docker
-> 
-> We provide a docker setup for those who do not have conda installed but may have docker installed. 
-> 
-> To run the workshop in a docker environment simply run the following command:
-> ```
-> docker compose up
-> ```
-> This will build the image and start a webserver at http://localhost:8501. If you run using docker, you can skip the rest of this section.
-
 We recommend that you install the dependencies in a conda environment, which can create and activate using the following commands:
 
 ```
 conda env create -f environment.yml
-conda activate mie2022_workshop_streamlit
+conda activate umc_workshop_streamlit
 ```
 
 Now let's install all the requirements which installs streamlit and other dependencies of this project.
@@ -24,13 +14,6 @@ Now let's install all the requirements which installs streamlit and other depend
 ```
 pip install -r requirements.txt
 ```
-
-> ##### :rocket: Fast forward
-> Alternatively, if you don't have a working python, conda or docker installation, you can fork a repl at: https://replit.com/@UMCResearch/mie2022workshopstreamlit (requires registration).
->
-> Repl.it is a browser-based environment for running python scripts without installing it locally. UMC has no affiliation to repl.it.
-> 
-> Once the page opens, click on "Fork repl" to create your own local copy.
 
 You will also need a dataset, for this tutorial we will use the VAERS 2020 dataset available for download here: https://vaers.hhs.gov/data/datasets.html
 
@@ -106,7 +89,7 @@ For the purposes of this demo, we perform a simple case-insensitive exact-match 
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -139,7 +122,7 @@ Let us add a slider to select the number of results to display. This can be done
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -163,7 +146,7 @@ Our assessors like this, however they quickly notice that sometimes they need to
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -193,7 +176,7 @@ With a simple application of `st.sidebar` we can move the paginations to the sid
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -227,7 +210,7 @@ import math
 import pandas as pd
 import streamlit as st
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 
@@ -267,7 +250,7 @@ import pandas as pd
 import streamlit as st
 import altair as alt
 
-df = pd.read_csv("2020VAERSData.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
+df = pd.read_csv("2020VAERSDATA.csv", encoding="cp1252", usecols=["VAERS_ID", "SEX", "SYMPTOM_TEXT", "RECVDATE", "NUMDAYS"], parse_dates=['RECVDATE']).dropna()
 
 query = st.text_input('Query', placeholder='Enter a search term')
 

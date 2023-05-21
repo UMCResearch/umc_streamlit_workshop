@@ -1,8 +1,0 @@
-services:
-  app:
-    build: .
-    volumes:
-      - ./:/app
-    ports:
-      - 127.0.0.1:8501:8501
-    command: streamlit run /app/workshop.py --server.port 8501

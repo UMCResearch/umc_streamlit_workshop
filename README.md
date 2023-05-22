@@ -42,4 +42,4 @@ streamlit run tutorial.py
 
 ## Feedback
 
-If you have any feedback on the workshop and the presentation feel free to leave your comments here: https://forms.office.com/r/PcYbSuxeZ4
+If you have any feedback on the workshop and the presentation feel free to leave your comments here: https://forms.office.com/e/xqT2y7sA1L
